@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f4ac0976f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <h1>alura latam</h1>
+    </div>
+
+    <div class="container">
+        
+        <h1>Encriptador de Texto</h1> 
+        <textarea id="inputText" placeholder="Ingresa el texto aquí"></textarea>
+        <div class="info-message">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>Solo letras minúsculas y sin acento</p>
+        </div>
+        <div class="buttons">
+            <button onclick="encrypt()">Encriptar</button>
+            <button onclick="decrypt()">Desencriptar</button>
+        </div>
+        
+        <textarea id="outputText" placeholder="Resultado" readonly></textarea>
+        <button onclick="copyToClipboard()">Copiar al portapapeles</button>
+        <button onclick="clearText()">Limpiar</button>
+    </div>
+    <footer>
+        <p>Todos los derechos reservados Cesar Vega &copy; 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
